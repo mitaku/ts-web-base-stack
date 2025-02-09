@@ -1,7 +1,7 @@
 {
 	"name": "@forge42/base-stack",
 	"version": "0.0.1",
-	"author": "forge42.dev",
+	"author": "forge-42",
 	"private": true,
 	"sideEffects": false,
 	"license": "MIT",
