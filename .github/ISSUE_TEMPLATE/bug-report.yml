@@ -1,0 +1,66 @@
+name: 🐞 Bug
+description: File a bug/issue
+title: "[BUG] <title>"
+labels: ["Bug", "Needs Triage"]
+body:
+  - type: checkboxes
+    attributes:
+      label: 既存のIssueがあるか確認
+      description: 既存のIssueがあるか確認してください
+      options:
+        - label: 既存のIssueがなかった
+          required: true
+  - type: textarea
+    attributes:
+      label: 事象/現在の挙動
+      description: どのような事象が発生しているか記載してください
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 期待する挙動
+      description: どのような挙動が期待されているか記載してください
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 再現手順
+      description: 再現に必要な情報（手順や、アカウント情報など）を記載してください
+      placeholder: |
+        1. ◯◯環境にログイン
+        1. ◯◯ページにアクセス
+        1. XX操作を行う
+        1. エラーが発生する
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: 再現率
+      description: 再現率を記載してください。1回中1回は避け、再現手順を元に複数回施行してください
+      placeholder: |
+        ex) 2/2
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 環境情報
+      description: |
+        examples:
+          - **OS**: Windows
+          - **接続環境**: 開発環境
+          - **ブラウザ**: Chrome
+      value: |
+        - OS:
+        - 接続環境:
+        - ブラウザ:
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 補足情報
+      description: |
+        リンクや参考情報など、より問題の背景を理解するための情報を記載してください
+        キャプチャやログファイル、デモ動画などを添付するとより問題の背景を理解しやすくなります
+    validations:
+      required: false
