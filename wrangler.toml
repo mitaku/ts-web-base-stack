@@ -1,5 +1,6 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "ts-web-base-stack"
+account_id = "9e2654e5da51e38cbb3b913f8f6390f3"
 
 main = "./build/server/index.js"
 workers_dev = true
