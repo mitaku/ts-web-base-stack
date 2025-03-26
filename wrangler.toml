@@ -5,8 +5,8 @@ account_id = "9e2654e5da51e38cbb3b913f8f6390f3"
 main = "./build/server/index.js"
 workers_dev = true
 # https://developers.cloudflare.com/workers/platform/compatibility-dates
-compatibility_date = "2024-09-26"
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_date = "2024-10-18"
+compatibility_flags = [ "nodejs_compat", "experimental" ]
 
 [assets]
 # https://developers.cloudflare.com/workers/static-assets/binding/
