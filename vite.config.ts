@@ -1,4 +1,5 @@
 import { reactRouter } from "@react-router/dev/vite"
+import { cloudflareDevProxy } from "@react-router/dev/vite/cloudflare"
 import tailwindcss from "@tailwindcss/vite"
 import { reactRouterDevTools } from "react-router-devtools"
 import { reactRouterHonoServer } from "react-router-hono-server/dev"
@@ -21,6 +22,7 @@ export default defineConfig({
 			}),
 			apply: "build",
 		},
+		cloudflareDevProxy(),
 		reactRouterDevTools(),
 		reactRouter(),
 		reactRouterHonoServer({
