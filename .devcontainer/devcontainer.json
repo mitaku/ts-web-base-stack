@@ -5,12 +5,10 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"onCreateCommand": "/bin/sh /workspaces/${localWorkspaceFolderBasename}/.devcontainer/onCreateCommand.sh",
 	"customizations": {
 		"vscode": {
-			"extensions": [
-				"biomejs.biome",
-				"codeforge.remix-forge"
-			]
+			"extensions": ["biomejs.biome", "codeforge.remix-forge"]
 		}
 	}
 
